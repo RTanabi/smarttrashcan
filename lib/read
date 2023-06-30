@@ -1,0 +1,60 @@
+// updateRoute(LatLng start, LatLng end) async {
+  //   try {
+  //     await getRoute(start, end);
+  //   } catch (e) {
+  //     print("updateRoute ====> $e");
+  //   }
+  // }
+
+  // getRoute(LatLng start, LatLng end) async {
+  //   try {
+  //     String url =
+  //         "http://router.project-osrm.org/route/v1/driving/${start.longitude},${start.latitude};${end.longitude},${end.latitude}?geometries=geojson";
+  //     http.Response response = await http.get(Uri.parse(url));
+
+  //     if (response.statusCode == 200) {
+  //       setState(
+  //         () {
+  //           var data = jsonDecode(response.body);
+  //           List route = data['routes'][0]['geometry']['coordinates'];
+  //           pointsDirection = List.generate(
+  //             route.length,
+  //             (index) => LatLng(
+  //               route[index][1],
+  //               route[index][0],
+  //             ),
+  //           );
+  //         },
+  //       );
+  //       mapController.move(pointsDirection.first, 16.5);
+  //     } else {
+  //       throw Exception('Failed to load route');
+  //     }
+  //   } catch (e) {
+  //     print("getRoute =====> $e");
+  //   }
+  // }
+
+
+
+
+
+  //for show directions
+            // PolylineLayer(
+            //   polylines: [
+            //     Polyline(
+            //       points: pointsDirection,
+            //       color: AppTheme.primaryColor.withOpacity(0.7),
+            //       strokeWidth: 4.0,
+            //     ),
+            //   ],
+            // ),
+
+
+
+
+
+
+            android:theme="@style/LaunchTheme"
+            android:name=".MainActivity"
+            android:exported="true"

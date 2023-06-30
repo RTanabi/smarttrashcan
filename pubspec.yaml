@@ -1,0 +1,55 @@
+name: smarttrashcan
+description: show trash bin in map
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  pinput: ^2.2.31
+  fluttertoast: ^8.2.2
+  http: ^1.0.0
+  lottie: ^2.4.0
+  loading_animations: ^2.2.0
+  geolocator: ^9.0.2
+  flutter_map: ^5.0.0
+  latlong2: ^0.9.0
+  rename: ^2.1.1
+  url_launcher: ^6.1.11
+  shared_preferences: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/appicon.png"
+  min_sdk_android: 21
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lottie/
+
+
+  
+  fonts:
+    - family: IranSans
+      fonts:
+        - asset: assets/fonts/IRANSans/IRANSans.ttf
+        - asset: assets/fonts/IRANSans/IRANSans-Bold.ttf
+          weight: 700
